@@ -22,4 +22,9 @@ class CaesarsCipherTest {
     void testCipheredMessageWithOffsetOf11() {
         assertEquals("tai mdq kag pauzs fapmk", caesarsCipher.cipher("how are you doing today", 11));
     }
+
+    @Test
+    void anotherFailingTest() {
+        assertEquals("", caesarsCipher.cipher("how are you doing today", 12));
+    }
 }
